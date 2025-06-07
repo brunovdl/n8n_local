@@ -1,5 +1,5 @@
 {
   "buildCommand": "pnpm run vercel-build",
-  "installCommand": "pnpm install --ignore-engines",
+  "installCommand": "pnpm config set engine-strict false && pnpm install",
   "outputDirectory": "packages/cli/dist"
 }
