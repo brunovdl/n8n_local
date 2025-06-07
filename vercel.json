@@ -1,0 +1,6 @@
+{
+  "buildCommand": "pnpm run vercel-build",
+  "installCommand": "pnpm install --ignore-engines",
+  "outputDirectory": "packages/cli/dist",
+  "ignoreCommand": "echo 'Não ignorar nada para o deploy'"
+}

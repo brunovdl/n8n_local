@@ -3,7 +3,7 @@
   "version": "1.97.0",
   "private": true,
   "engines": {
-    "node": ">=22",
+    "node": ">=22.15",
     "pnpm": ">=10.2.1"
   },
   "packageManager": "pnpm@10.11.1",
@@ -43,7 +43,8 @@
     "test:nodes": "turbo run test:nodes --concurrency=1",
     "watch": "turbo run watch --parallel",
     "webhook": "./packages/cli/bin/n8n webhook",
-    "worker": "./packages/cli/bin/n8n worker"
+    "worker": "./packages/cli/bin/n8n worker",
+    "vercel-build": "pnpm install --ignore-engines && turbo run build"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.0",
